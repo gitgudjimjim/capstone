@@ -54,7 +54,7 @@ with open('employment_html.txt', 'w', encoding='utf-8') as f:
     for p in employment_html.select('p'):
         print(p.text)
         f.write(p.text)
-    for .panel-title in employment_html.select(.panel-title):
-        print(.panel-title.text)
-        f.write(.panel-title.text)
+    for panel_title in employment_html.select('.panel-title'):
+        print(panel_title.text)
+        f.write(panel_title.text)
 #tags = soup.find_all("li", "panel-title")

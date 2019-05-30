@@ -1,0 +1,208 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Oregon Veterans{% endblock title %}</title>
+    <link rel="stylesheet"
+      href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    {% block main_styles %}
+        <link rel='stylesheet' href='{% static "todos/css/stylesheet.css" %}'>
+    {% endblock main_styles %}
+    {% block extra_styles %}{% endblock extra_styles %}
+    {% block js_head %}{% endblock js_head %}
+</head>
+<body>
+  <div class="row">
+    <div class="col-sm-2">
+      <ul class="nav flex-column sticky-top data-spy="affix">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:homepage' %}">HOMEPAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:burial_benefits' %}">Burial Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:claims_process' %}">Claims Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:disability_compensation' %}">Disability Compensation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:education' %}">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:emergency_assistance' %}">Emergency Assistance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:employment' %}">Employment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:health' %}">Healthcare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:home_loans' %}">Home Loans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:license_plates' %}">License Plates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:long_term_care' %}">Long-Term Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:pension' %}">Pension</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:records_medals' %}">Records and Medals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:recreation' %}">Recreation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:special_advocacy' %}">Special Advocacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:taxes' %}">Taxes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:transportation' %}">Transportation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_IDs' %}">Veteran IDs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_owned_businesses' %}">Veteran Owned Businesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_volunteer_program' %}">Veteran Volunteer Program</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <h1 class="text-center">Employment</h1>
+        <p>
+          A number of state and federal programs are available to help veterans get the most out of their careers - whether you are seeking advancement in your current position or looking for the right place in your first civilian job.
+        </p>
+<hr color=red>
+      <h2 class="text-center">*Benefits and Programs*</h2>
+
+      <h3 class="text-center">Direct Professional Licensing for Military Experience</h3>
+        <p>
+          ​Veterans leave military service with a wealth of transferable skills and professional experiences. Now, thanks to an Oregon law passed in 2012, you may be able to attain official accreditation for those skills in the civilian workforce. House Bill 4063, designed to quickly get service members back to work after serving in the military, requires certain professional licensing agencies and boards in Oregon to accept military training or experience as an allowable substitution for traditional civilian education or experience required for licensure, certification or registration.
+
+That means veterans in certain career fields will not need to go back to school for training that they have already received in the military, saving time and money. Certain professions specified in the bill may have special requirements that must be met in addition to military education or experience.
+
+For more information: House Bill 4063 of the 2012 Legislative Session​
+        </p>
+      <h3 class="text-center">Employers:How to Hire Veterans</h3>
+        <p>
+          There are a number of programs and incentives for employers to hire service-disabled veterans. Assistance from specialists with the Federal VA will help you find the best solution for hiring veterans.
+
+For more information: Federal VA: For Employers - Veterans Opportunity to Work​
+        </p>
+      <h3 class="text-center">Employment Opportunities for Homeless Veterans</h3>
+        <p>
+          The Homeless Veteran Supported Employment Program (HVSEP) provides vocational assistance, job development and placement, and ongoing supports to improve employment outcomes among homeless Veterans and Veterans at-risk of homelessness. Formerly homeless Veterans who have been trained as Vocational Rehabilitation Specialists (VRSs) provide these services.
+
+VA’s Compensated Work Therapy (CWT) Program is a national vocational program comprised of three unique programs which assist homeless Veterans in returning to competitive employment: Sheltered Workshop, Transitional Work, and Supported Employment. Veterans in CWT are paid at least the federal or state minimum wage, whichever is higher.
+
+VA's National Cemetery Administration and Veterans Health Administration have also formed partnerships at national cemeteries, where formerly homeless Veterans from the CWT program have received work opportunities.
+
+The Vocational Rehabilitation and Employment (VR&E) Program assists Veterans with service-connected disabilities to prepare for, find, and keep suitable jobs. Services that may be provided include: Comprehensive rehabilitation evaluation to determine abilities, skills, and interests for employment; employment services; assistance finding and keeping a job; and On the Job Training (OJT), apprenticeship, and non-paid work experiences.
+
+For more information: Federal VA: Homeless Veterans Employment​
+
+
+        </p>
+      <h3 class="text-center">Oregon Disabled Veterans and Veterans' Employment Representatives</h3>
+        <p>
+          Veterans can avail themselves of a number of programs at the state and federal level for assistance with finding employment in the civilian sector.
+
+Priority of Service:
+
+Through WorkSource Oregon, veterans and spouses of veterans may qualify for Priority of Service in employment and training services. This includes priority referrals to jobs and other services over non-veteran applicants with the same qualifications.
+
+Disabled Veterans’ Outreach Program (DVOPs)
+
+Specialists (DVOPs) and Local Veterans Employment Representatives (LVERs) assist veterans in applying for job in federal, state, and local government as well as the private sector.
+
+DVOPs and LVERS have offices to serve all veterans in more than 20 Oregon cities.
+
+For more information: Oregon Employment Department: Veterans Services
+        </p>
+      <h3 class="text-center">​Veterans Day Off</h3>
+        <p>
+          In the eyes of the State of Oregon, you, as a military veteran, are entitled to the day off on Veterans Day. According to Senate Bill 1, passed during the Oregon Legislature’s 2013 Regular Session, employers are required to offer eligible veteran employees paid or unpaid time off from work on November 11 of each year in recognition of their national service.
+
+By law, you must give notice and proof-of-service documentation, such as a DD 214, to your employer at least 21 days in advance of Veterans Day.  Employers must respond to time-off requests at least 14 days prior to the holiday, confirming explicitly if time off will be granted and whether it will be paid or unpaid. Whether the time off is paid or unpaid is at the discretion of the employer.
+
+Employers may deny the eligible veteran’s request only if the employer can demonstrate that granting the request would cause a significant economic or operational disruption or an undue hardship to the company. In those circumstances, the employer must then allow the eligible veteran a single day off before the following Veterans Day to honor the holiday. That day off must be in addition to any other time off to which the employee would otherwise be entitled.
+
+For more information: Senate Bill 1 from the Oregon Legislature’s 2013 RegularSession
+       </p>
+      <h3 class="text-center">Veterans' Preference</h3>
+       <p>
+         Veterans and disabled veterans receive preference when applying for federal, state, county, and local government jobs in Oregon.
+
+Oregon Public Sector Veterans’ Preference
+
+Thanks to an Oregon law first passed by the Legislature in 1977, public employers must grant preference to a veteran or disabled veteran who applies for a vacant civil service position — whether as a new hire or as a promotion from within — at any state, county or local government agency. To receive preference, you must successfully clear an initial application screening, satisfy any applicable exam or civil service test, and meet the minimum and any special qualifications for the job.
+
+Veterans’ Preference does not compel a public employer to hire a veteran or disabled veteran based solely on their veteran status; however, it does require that an eligible veteran or disabled veteran be appointed when their application assessment, combined with applicable veterans’ preference points, is equal to or higher than that of a non-veteran.
+
+For more information: Oregon Veterans' Preference
+
+Veterans’ Preference is granted in accordance with Oregon Revised Statutes (ORS) 408.225, 408.230, and 408.235; Oregon Administrative Rules (OAR) 105-040-0010 and 105-040-0015. You can read the Veteran Preference OARs here.
+
+Federal Veterans' Preference
+
+Veterans who meet certain qualifications receive preference over other applicants when applying for federal government jobs in both the competitive and excepted service.
+
+Detailed in Title 5 of the United States Code, veterans’ preference can be confusing. Eligibility is based on length and dates of active duty service, a service-connected disability, or receipt of a campaign badge or Purple Heart. Not all active duty service may qualify for veterans' preference.
+
+Unlike Oregon state Veterans’ Preference, which only has two preference categories, federal employment allows for THREE types of eligible preferences: disabled veterans (10-point preference), non-disabled veterans (five-point preference) and sole survivorship (zero-point preference).
+
+Who qualifies?
+
+To be eligible for veterans’ preference by federal employers, you must have been discharged or released under honorable conditions.
+
+For more information: Department of Labor’s Veterans’ Preference Advisor
+       </P>
+      <h3 class="text-center">Vocational Rehabilitation and Employment(VR&E)Program</h3>
+       <p>
+         This federal VA program provides education and job training to aid your transition back into the civilian workforce. It applies to veterans in general, but also has specific provisions for disabled veterans and their family members.
+
+Find out more: Federal VA: Vocational Rehabilitation and Employment Services​
+       </P>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center">​</h3>
+       <p>
+      </p>
+      <h3 class="text-center"></h3>
+        <p>
+        </P>
+
+
+    </div>
+  </div>
+  
+{% block content %}
+{% endblock content %}
+{% block js_body %}{% endblock js_body %}
+</body>
+</html>

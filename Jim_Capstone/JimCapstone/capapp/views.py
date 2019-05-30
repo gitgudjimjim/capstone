@@ -5,10 +5,12 @@ from django.http import HttpResponse
 
 #def basetemplate(request):
 #    return render(request, 'capapp/basetemplate.html')
-def index(request):
-    return render(request, 'capapp/index.html')
+def homepage(request):
+    return render(request, 'capapp/homepage.html')
 def ap(request):
     return render(request, 'capapp/adaptive_programs.html')
+def burial_benefits(request):
+    return render(request, 'capapp/burial_benefits.html')
 def claims(request):
     return render(request, 'capapp/claims_process.html')
 def disability(request):
@@ -17,20 +19,30 @@ def education(request):
     return render(request, 'capapp/education.html')
 def employment(request):
     return render(request, 'capapp/employment.html')
-def homeless(request):
-    return render(request, 'capapp/homelessness_and_emergency.html')
-def housing(request):
-    return render(request, 'capapp/housing_and_property_tax.html')
-def IDs(request):
-    return render(request, 'capapp/IDs_DMVplates_records.html')
+def emergency(request):
+    return render(request, 'capapp/emergency_assistance.html')
+def home_loans(request):
+    return render(request, 'capapp/home_loans.html')
+def license_plates(request):
+    return render(request, 'capapp/license_plates.html')
+def records_medals(request):
+    return render(request, 'capapp/records_medals.html')
 def justice(request):
     return render(request, 'capapp/justice_involved_veterans.html')
 def longterm(request):
     return render(request, 'capapp/long_term_care.html')
-def medical(request):
-    return render(request, 'capapp/medical_and_mental_health.html')
+def health(request):
+    return render(request, 'capapp/health_care.html')
+def pension(request):
+    return render(request, 'capapp/pension.html')
+def taxes(request):
+    return render(request, 'capapp/taxes.html')
 def vethomes(request):
     return render(request, 'capapp/oregon_veteran_homes.html')
+def veteran_IDs(request):
+    return render(request, 'capapp/veteran_IDs.html')
+def veteran_volunteer_program(request):
+    return render(request, 'capapp/veteran_volunteer_program.html')
 def recreation(request):
     return render(request, 'capapp/recreation.html')
 def advocacy(request):

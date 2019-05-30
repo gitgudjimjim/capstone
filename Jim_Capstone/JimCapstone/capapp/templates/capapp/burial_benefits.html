@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Oregon Veterans{% endblock title %}</title>
+    <link rel="stylesheet"
+      href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    {% block main_styles %}
+    <link rel='stylesheet' href='{% static "todos/css/stylesheet.css" %}'>
+    {% endblock main_styles %}
+    {% block extra_styles %}{% endblock extra_styles %}
+    {% block js_head %}{% endblock js_head %}
+
+</head>
+<body>
+  <div class="row">
+    <div class="col-sm-2">
+      <ul class="nav flex-column sticky-top data-spy="affix">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:homepage' %}">HOMEPAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:burial_benefits' %}">Burial Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:claims_process' %}">Claims Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:disability_compensation' %}">Disability Compensation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:education' %}">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:emergency_assistance' %}">Emergency Assistance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:employment' %}">Employment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:health' %}">Healthcare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:home_loans' %}">Home Loans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:license_plates' %}">License Plates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:long_term_care' %}">Long-Term Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:pension' %}">Pension</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:records_medals' %}">Records and Medals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:recreation' %}">Recreation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:special_advocacy' %}">Special Advocacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:taxes' %}">Taxes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:transportation' %}">Transportation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_IDs' %}">Veteran IDs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_owned_businesses' %}">Veteran Owned Businesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_volunteer_program' %}">Veteran Volunteer Program</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <h1 class="text-center">Burial Benefits</h1>
+        <p>
+          From burial at Willamette National Cemetery to a Presidential Memorial Certificate, there are many ways our nation honors and remembers its fallen heroes. The federal VA offers free headstones to mark the gravesite of any eligible veteran, or even a cash allowance to help cover the cost of funeral and burial expenses.Explore below for more detailed information about the various benefits that are available to ensure every veteran is laid to rest with the honor and dignity they deserve.
+        </p>
+<hr color=red>
+      <h2 class="text-center">Burial Allowance</h2>
+        <p>
+          Families of eligible deceased veterans may receive a burial allowance from the federal VA to help cover the cost of burial and funeral expenses. These are paid at a flat rate, and the amount depends on certain factors, including whether your loved one's death was considered service-connected or not, or if he or she was being hospitalized by the VA at the time of death.Reimbursements are generally categorized as two types of payments: burial (or
+          cremation) and funeral expense allowance, and plot interment allowance.To file for reimbursement of burial expenses, an Application of Burial Allowance form must be submitted to the federal VA. You must also provide a certified copy of the veteran’s death certificate and proof of the veteran’s military service (Form DD 214), as well as itemized invoices or receipts of the funeral and burial expenses.
+        </P>
+      <h2 class="text-center">Burial Flag</h2>
+        <p>
+          If you or your loved one served honorably in the U.S. Armed Forces, the federal VA will furnish, at no cost, a United States flag for funeral and memorialization purposes. The flag is provided to drape the casket or accompany the urn of a deceased veteran during funeral services, after which it may be kept or donated by the veteran’s next of kin.All veterans who received an honorable discharge from their military service are eligible to receive a burial flag at no cost. Veterans who received any discharge other than dishonorable may also qualify if the nature of their service meets certain conditions.How to obtain a burial flag:When burial is in a national, state or post cemetery, a burial flag will automatically be provided by the facility. When burial is in a private cemetery, the funeral director will help you with the process of applying for and obtaining a burial flag from the closest issuing point (typically, a U.S. post office)
+        </p>
+      <h2 class="text-center">Headstones and Markers</h2>
+        <p>
+          For Veterans Buried in Private CemeteriesThe federal VA will provide a headstone or marker for the unmarked grave of any eligible veteran in any cemetery around the world, regardless of his or her date of death.For veterans whose graves are already marked, the VA may also provide a headstone to supplement the existing marker or a bronze medallion (see below) to be affixed to the privately purchased headstone. The veteran must have died on or after Nov. 1, 1990, to be eligible.The headstone or marker is provided by the VA at no charge, but the arrangements and any fees associated with placing it in a private cemetery will be the responsibility of the applicant.For Veterans Buried in National, State or Military CemeteriesWhen a veteran, spouse or dependent is buried in a national, state or military cemetery, a headstone or marker will be provided by cemetery officials based on inscription information provided by the next of kin or authorized representative.Spouses and dependents are not eligible for a government-furnished headstone or marker unless they are buried in a national, state or military cemetery.
+        </p>
+      <h2 class="text-center">Bronze Medallions for Headstones and Markers</h2>
+        <p>
+          If your loved one is interred with a non-government headstone, you can still memorialize their military service with a bronze medallion. These are provided, upon request, by the federal VA to be affixed to an existing privately purchased headstone or marker to signify your loved one's status as a veteran.If requested, the medallion is furnished in lieu of — but not in addition to — a traditional government headstone or marker for veterans that died on or after Nov. 1, 1990, and whose grave is marked with a privately purchased headstone or marker.
+        </p>
+      <h2 class="text-center">Burial at Sea</h2>
+        <p>
+          Military veterans have the option to be buried at sea. These ceremonies are performed aboard U.S. Navy vessels while the ship is deployed and, because of this, family members are not allowed to be present. The commanding officer of the ship assigned to perform the ceremony will notify the family of the date, time, and longitude and latitude once the committal service has been completed.For the purposes of the ceremony, the deceased veteran’s remains can be housed either in a traditional funeral casket or in a cremation urn or temporary container. A burial flag is required for all committal services performed aboard U.S. Naval vessels, regardless of the type of container used. Eligibility
+           Those eligible for burial at sea include active duty members of the uniformed services (regardless of branch); retirees and veterans who were honorably discharged; U.S. civilian marine personnel of the Military Sealift Command; and dependent family members of active duty personnel, military retirees, or veterans.How to applyThe federal VA National Cemetery Administration does not handle applications for burial at sea. Requests must be submitted directly to the U.S. Navy Mortuary Branch.For more information: U.S. Navy Mortuary Services
+        </p>
+      <h2 class="text-center">Military Funeral Honors</h2>
+        <p>
+          Eligible veterans are entitled, by law, to dignified military funeral honors in recognition of their service to their country. These ceremonies are provided free of charge and include, at a minimum, the presence of no less than two uniformed service members folding and presenting the United States flag to the next of kin and the playing of "Taps."EligibilityThose eligible for military funeral honors include any active duty or Selected Reserve service members, as well as any veterans who served on active duty or in the Selected Reserve and were discharged under conditions other than dishonorable. More information about eligibility can be found on the Military Funeral Honors website.
+          How to apply To request military funeral honors, contact your local funeral director, who will then contact the appropriate military service to arrange for the funeral honors detail
+        </p>
+      <h2 class="text-center">​Presidential Memorial Certificates</h2>
+        <p>
+          Certain veterans buried in a national cemetery may also be eligible to have, upon a request, a Presidential Memorial Certificate (PMC) presented to their next of kin. A PMC is an engraved paper certificate, bearing the signature of the current president of the United States, expressing the country's grateful recognition of the departed veteran's service to the country.
+       </p>
+    </div>
+  </div>
+{% block content %}
+{% endblock content %}
+{% block js_body %}{% endblock js_body %}
+</body>
+</html>

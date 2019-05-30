@@ -1,0 +1,281 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Oregon Veterans{% endblock title %}</title>
+    <link rel="stylesheet"
+      href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    {% block main_styles %}
+        <link rel='stylesheet' href='{% static "todos/css/stylesheet.css" %}'>
+    {% endblock main_styles %}
+    {% block extra_styles %}{% endblock extra_styles %}
+    {% block js_head %}{% endblock js_head %}
+</head>
+<body>
+  <div class="row">
+    <div class="col-sm-2">
+      <ul class="nav flex-column sticky-top data-spy="affix">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:homepage' %}">HOMEPAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:burial_benefits' %}">Burial Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:claims_process' %}">Claims Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:disability_compensation' %}">Disability Compensation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:education' %}">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:emergency_assistance' %}">Emergency Assistance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:employment' %}">Employment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:health' %}">Healthcare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:home_loans' %}">Home Loans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:license_plates' %}">License Plates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:long_term_care' %}">Long-Term Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:pension' %}">Pension</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:records_medals' %}">Records and Medals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:recreation' %}">Recreation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:special_advocacy' %}">Special Advocacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:taxes' %}">Taxes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:transportation' %}">Transportation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_IDs' %}">Veteran IDs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_owned_businesses' %}">Veteran Owned Businesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_volunteer_program' %}">Veteran Volunteer Program</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <h1 class="text-center">Education</h1>
+        <p>
+          Many veterans turn to higher education to further their skills and training after serving their country.
+        </p>
+<hr color=red>
+      <h2 class="text-center">*Benefits and Programs*</h2>
+      <h3 class="text-center">Oregon Veteran Educational Aid Program</h3>
+        <p>
+          Funding suspended for the 2017-19 Biennium (through June 30, 2019)
+        </p>
+      <h3 class="text-center">State Tuition Assistance for Oregon Army National Guard</h3>
+        <p>
+          The state of Oregon now offers eligible members of the Oregon National Guard the chance to get an education without having to worry about paying for school tuition, provided they attend an Oregon community college or public university and are working toward an associate or bachelor’s degree. ​
+
+For more information: www.oregonarmyguard.com/sta​
+        </p>
+      <h3 class="text-center">Post 9/11 GI Bill</h3>
+        <p>
+          The Post-9/11 GI Bill provides financial support for education and housing to honorably discharged veterans with at least 90 days of aggregate service on or after September 11, 2001, or individuals discharged with a service-connected disability after 30 days. This benefit provides up to 36 months of education benefits; generally benefits are payable for 15 years following your release from active duty.
+
+Who qualifies?
+
+You qualify for this benefit if you:
+
+Served at least 90 days aggregate service on Title 10 Active Duty or Title 32 Active Guard Reserve Duty on or after September 11, 2001 or;
+Were discharged with a service-connected disability after 30 days; and
+Received an honorable discharge.
+Maintain enrollment at more than half-time in a VA-approved training program. Programs include undergraduate or graduate degrees, vocational training, licensing and certification exams, in addition to others.
+What’s included?
+
+Full tuition and fees paid directly to your school (you must be an in-state student attending a public institution).
+If you attend a private or foreign school, tuition & fees are capped at the national maximum rate of $18,077.50.
+A Monthly Housing Allowance (MHA) equal to the active duty Basic Allowance for Housing (BAH) for an E-5 with dependents. Click here​ to determine your MHA.
+If you are attending solely by distance learning, you will receive one half of the BAH national average.
+MHA is not payable to individuals on active duty or those enrolled at half-time or less.
+An annual books and supplies stipend of $1,000.
+A one-time rural benefit payment.
+Transferability of benefits to dependents and spouses of veterans with six years of active duty service.
+For more information: Federal VA: Post-9/11 GI Bill
+
+​​
+        </p>
+      <h3 class="text-center">Tillman Military Scholarship</h3>
+        <p>
+          The Pat Tillman Foundation’s Tillman Military Scholars program is another great resource for removing financial barriers to higher education.
+
+Each year, this program awards a select number of scholarships to veterans across the country to cover not only direct study-related expenses such as tuition and fees, but also other needs, including housing and child care. Both veterans and their spouses are eligible to apply.
+
+For more information:  contact your campus veteran services office or visit Tillman Military Scholarship​
+        </p>
+      <h3 class="text-center">Montgomery GI Bill(MGIB)</h3>
+        <p>
+          For qualified veterans, the Montgomery GI Bill (MGIB) can be a valuable resource for reducing the cost of education and training programs. This benefit can be used to pay for up to 36 months of costs for many different programs including:
+
+College degrees (undergraduate and graduate)
+Technical or Vocational Training
+Distance Learning or Correspondence Courses
+Apprenticeships/Job Training
+Flight Training
+Licensing and Certification Tests
+Entrepreneurship Training
+Certain Entrance Examinations
+Generally, these benefits must be accessed within 10 years of your separation from active duty. Unlike the Post-9/11 GI Bill, the Montgomery GI Bill is not transferable to veterans’ family members.
+
+Who Qualifies?
+You may be eligible for this benefit if you have an honorable discharge and you have a high school diploma or GED, and if the nature of your service meets all of the requirements of one of four VA qualification categories.
+
+For more information: Federal VA: Montgomery GI Bill (MGIB) Benefits​
+        </p>
+      <h3 class="text-center">​Tuition Assistance Top-Up</h3>
+        <p>
+          Top-up allows the federal VA to reimburse you for all or a portion of the charges for your college courses that are not covered under certain military education programs. The amount of this benefit can be equal to the difference between the total cost of a college course and the amount of Tuition Assistance (TA) that is paid by the military for the course.
+
+Who qualifies?
+
+To be eligible for the Top-up benefit, you must be approved for federal TA by a military department and be eligible for either Montgomery GI Bill (MGIB) – Active Duty benefits or the Post-9/11 GI Bill.
+
+For more information: Federal VA: Tuition Assistance Top Up​
+       </p>
+      <h3 class="text-center">Yellow Ribbon GI Education Enhancement Program</h3>
+       <p>
+         This federal program provides additional funds toward your education expenses at a number of participating colleges and universities nationwide. It is meant to fill the payment gap in situations where the maximum amount awarded by your Post 9/11 GI Bill falls short of the total cost of attendance at your school.
+
+Institutions voluntarily enter into a Yellow Ribbon Agreement with VA and choose the amount of tuition and fees that will be contributed. VA matches that amount and issues payments directly to the institution, with no additional charge to your GI Bill entitlement. Contact your institution to see if they participate in the Yellow Ribbon Program.
+
+Who qualifies?
+
+To access this benefit, you must:
+
+Be entitled to the maximum benefit rate of the Post 9/11 GI Bill.
+Not be on active duty or a spouse using transferred entitlement.
+Dependent transferees may be eligible in certain circumstances.
+Be attending an institution participating in the Yellow Ribbon Program.
+Your school must certify your enrollment to the VA.
+​Your school must have not offered Yellow Ribbon to more than the maximum number of individuals, as stated in their participation agreement.
+For more information: Federal VA: Yellow Ribbon Program​
+       </P>
+      <h3 class="text-center">Reserve Education Assistance Program(REAP)</h3>
+       <p>
+         REAP provides educational assistance to members of the Reserve components called to active duty in response to a war or national emergency declared by the president or Congress.
+
+Who qualifies?
+
+Eligible veterans must be a member of a Ready Reserve component (Selected Reserve, Individual Ready Reserve, or Inactive National Guard) to pay into the “buy-up” program. National Guard members are eligible if they were serving under Title 32 orders for 90 consecutive days as authorized by the president or secretary of defense for a national emergency and that was supported by federal funds.
+
+Noteworthy:
+
+The Post-9/11 GI Bill in many ways has replaced REAP because it also provides educational assistance benefits for Reserve and National Guard members called to active duty on or after September 11, 2001, and in many cases provides a greater benefit than REAP.
+
+For more information: Federal VA: Reserve Educational Assistance Program (REAP)​
+       </P>
+      <h3 class="text-center">Vocational Rehabilitation and Employment(VR&E)Program</h3>
+       <p>
+         This federal VA program provides education and job training to aid your transition back into the civilian workforce. It applies to veterans in general, but also has specific provisions for disabled veterans and their family members.
+
+Find out more: Federal VA: Vocational Rehabilitation and Employment Services​
+       </p>
+      <h3 class="text-center">College Credit for Military Training</h3>
+       <p>
+         You can receive college credit for certain types of education and training you received in the military, saving you money and time as you pursue your education goals.
+
+All universities and local community colleges throughout Oregon accept guidance from the American Council on Education (ACE), which provides recommendations on how to award academic credit for military training.
+
+To claim college credit for military training, request a transcript from your military service branch and submit it to your local higher learning institution.
+
+Request a transcript: Veterans of the Army, Coast Guard, Marine Corps, and Navy can access their Joint Services Transcript (JST) online by visiting the JST website.  Air Force veterans should contact the Community College of the Air Force (CCAF)​ to receive transcripts.
+       </p>
+      <h3 class="text-center">Non-Resident Veteran In-State Tuition</h3>
+       <p>
+         Attending college in Oregon is now more affordable for some recently-relocated veterans thanks to an Oregon law eliminating out-of-state education costs. Oregon House Bill 2158, signed into law in the summer of 2013, states that if you are a veteran of the armed forces pursuing undergraduate studies at a public institution in Oregon, you will pay tuition rates and fees no greater than the Oregon resident rate — even if you are not yet considered a permanent resident of the state.
+
+These savings also apply to veterans’ dependents using transferred benefits, as well as orphans of veterans who died on active duty.
+
+Note: Certain online-only programs may be excluded from this program.
+
+This benefit does not apply to graduate students or active duty military members or their dependents.
+
+For Graduate Students
+
+Similar to the above program, HB 4021, signed into law in the spring of 2014, reduces out-of-state tuition costs for nonresident veterans attending graduate school in Oregon.
+
+Under this program, qualified student-veterans will have their nonresident tuition reduced after all other VA benefits and Gift Aid (grants and fee remissions) have been deducted. Loans received through financial aid do not fall into this category.
+
+For more information: contact the veterans’ service office or financial aid office at your local institution.
+       </p>
+      <h3 class="text-center">Voyager Tuition Assistance Program</h3>
+       <p>
+         Voyager is a tuition benefit that is available to Oregon veterans who served as members of the National Guard or Reserves in an active duty capacity in a combat zone on or after September 11, 2001.
+
+Under this program, eligible student veterans will be awarded a fee remission for no more than the difference between campus tuition and mandatory fees and expected military tuition benefits. This program is meant to work in conjunction with other educational aid programs; thus, you are still responsible for obtaining federal military tuition benefits. If you are not eligible for federal tuition benefits, you must demonstrate proof of ineligibility.
+
+What it covers:
+
+Voyager is a "last dollar award," meaning it works to ensure that you do not pay tuition costs if your other federal military education benefits fall short. The typical maximum length of the award is four years for undergraduate programs (a fifth year may be approved under certain programs). This benefit is only available to those seeking their initial bachelor’s degree, and it carries a maximum credit limit of 15 course credits beyond the minimum needed for degree completion.
+
+The Voyager Tuition Assistance Program does not cover E-Campus or Distance courses. This benefit is not transferable to a veteran’s spouse or dependents.
+
+For more information:  Contact your campus financial services office.
+       </p>
+      <h3 class="text-center">Statewide Apprenticeships(BOLI)</h3>
+       <p>
+         Are you a veteran seeking training in the construction, industrial or manufacturing trades? If so, you may be able to use your veterans’ educational benefits for apprenticeship programs such as Oregon Apprenticeship Opportunities Statewide.
+
+This program, offered through the Oregon Bureau of Labor and Industries (BOLI) in partnership with Oregon businesses and local apprenticeship committees, offers career opportunities through paid on-the-job training and education, with a focus on building and industrial career fields.
+
+If an existing apprenticeship program does not have an approved veteran’s program in place, you can coordinate the establishment of a new training program by communicating with an employer and the Apprenticeship and Training Division.
+
+For more information: Oregon Bureau of Labor and Industries (BOLI)​: Apprenticeship and Training Division
+       </p>
+      <h3 class="text-center">​Survivors' and Dependents' Education Assistance Program(DEA)</h3>
+       <p>
+         This program offers education and training opportunities to eligible dependents of veterans who are permanently and totally disabled due to a service-related condition or of veterans who died while on active duty or as a result of a service-related condition.
+
+Benefits may be used for degree and certificate programs, apprenticeship, and on-the-job training. If you are a spouse, you may take a correspondence course. Remedial, deficiency, and refresher courses may be approved under certain circumstances.
+
+Find more information: Federal VA: Survivors' and Dependents' Education Assistance Program (DEA)​
+      </p>
+      <h3 class="text-center">Veterans Educational Assistance Program(VEAP)</h3>
+        <p>
+          VEAP is available if you elected to make contributions from your military pay to participate in this education benefit program. The government matches your contributions on a 2-for-1 basis.
+
+Educational programs for which these benefits may be used include college degree and certificate programs, technical or vocational training, flight training, apprenticeships, and licensing and certification tests, as well as various others.
+
+Benefit entitlement is for one to 36 months, depending on the number of monthly contributions. You have 10 years from your release from active duty to use VEAP benefits. If the entitlement is not used after the 10-year period, your portion remaining in the fund will be automatically refunded.
+
+If you are currently on active duty and wish to receive VEAP benefits, you must have at least three months of contributions available.
+
+For more information: Federal VA: Veterans Educational Assistance Program (VEAP)​
+        </P>
+
+
+    </div>
+  </div>
+  
+{% block content %}
+{% endblock content %}
+{% block js_body %}{% endblock js_body %}
+</body>
+</html>

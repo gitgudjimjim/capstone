@@ -1,0 +1,190 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Oregon Veterans{% endblock title %}</title>
+    <link rel="stylesheet"
+      href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    {% block main_styles %}
+        <link rel='stylesheet' href='{% static "todos/css/stylesheet.css" %}'>
+    {% endblock main_styles %}
+    {% block extra_styles %}{% endblock extra_styles %}
+    {% block js_head %}{% endblock js_head %}
+</head>
+<body>
+  <div class="row">
+    <div class="col-sm-2">
+      <ul class="nav flex-column sticky-top data-spy="affix">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:homepage' %}">HOMEPAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:burial_benefits' %}">Burial Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:claims_process' %}">Claims Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:disability_compensation' %}">Disability Compensation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:education' %}">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:emergency_assistance' %}">Emergency Assistance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:employment' %}">Employment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:health' %}">Healthcare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:home_loans' %}">Home Loans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:license_plates' %}">License Plates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:long_term_care' %}">Long-Term Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:pension' %}">Pension</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:records_medals' %}">Records and Medals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:recreation' %}">Recreation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:special_advocacy' %}">Special Advocacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:taxes' %}">Taxes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:transportation' %}">Transportation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_IDs' %}">Veteran IDs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_owned_businesses' %}">Veteran Owned Businesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_volunteer_program' %}">Veteran Volunteer Program</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <h1 class="text-center">Emergency Assistance</h1>
+        <p>
+          Efforts are growing across the nation to help - rather than criminalize - homeless or justice-involved veterans, as well as those experiencing financial, mental health or other crises.
+        </p>
+<hr color=red>
+      <h2 class="text-center">*Benefits and Programs*</h2>
+      <h3 class="text-center">Drop-In Centers</h3>
+        <p>
+          These programs provide a daytime sanctuary where homeless veterans can clean up, wash their clothing, and participate in a variety of therapeutic and rehabilitative activities. Linkages with longer-term assistance are also available. Locations vary.
+
+For more information: Contact your local Vet Center or federal VA Community-Based Outpatient Clinic (CBOC) for locations and services in your area.
+        </p>
+      <h3 class="text-center">Employment Opportunities for Homeless Veterans</h3>
+        <p>
+          The Homeless Veteran Supported Employment Program (HVSEP) provides vocational assistance, job development and placement, and ongoing supports to improve employment outcomes among homeless Veterans and Veterans at-risk of homelessness. Formerly homeless Veterans who have been trained as Vocational Rehabilitation Specialists (VRSs) provide these services.
+
+VA’s Compensated Work Therapy (CWT) Program is a national vocational program comprised of three unique programs which assist homeless Veterans in returning to competitive employment: Sheltered Workshop, Transitional Work, and Supported Employment. Veterans in CWT are paid at least the federal or state minimum wage, whichever is higher.
+
+VA's National Cemetery Administration and Veterans Health Administration have also formed partnerships at national cemeteries, where formerly homeless Veterans from the CWT program have received work opportunities.
+
+The Vocational Rehabilitation and Employment (VR&E) Program assists Veterans with service-connected disabilities to prepare for, find, and keep suitable jobs. Services that may be provided include: Comprehensive rehabilitation evaluation to determine abilities, skills, and interests for employment; employment services; assistance finding and keeping a job; and On the Job Training (OJT), apprenticeship, and non-paid work experiences.
+
+For more information: Federal VA: Homeless Veterans Employment​
+
+
+        </p>
+      <h3 class="text-center">Financial Assistance</h3>
+        <p>
+          Oregon Veterans’ Emergency Financial Assistance
+
+The Oregon Veterans’ Emergency Financial Assistance Program (OVEFAP) is for veterans and their immediate family (spouse, unremarried surviving spouse, child, or stepchild) who are in need of emergency financial assistance. Assistance is granted one time only and average award amounts vary.
+
+Emergency financial assistance includes, but is not limited to, emergency or temporary housing and related housing expenses, such as expenses for utilities, insurance, house repairs; mortgage or rent assistance; emergency medical or dental expenses; and emergency transportation expenses.
+
+VS1024 OVEFAP Application.pdfVS1024 OVEFAP Application.pdf
+
+For more information: contact ODVA at 503-373-2085.
+
+Veterans Emergency Relief Programs
+
+Many military and service organizations have emergency relief programs specifically designated to help veterans and military members and their families. Inquire within local organizations about programs such as the Air Force Aid Society, American Legion Temporary Financial Assistance, Army Emergency Relief, Disabled American Veterans Disaster Relief Grants, Navy-Marine Corps Relief Society, Oregon National Guard Emergency Relief, Salvation Army Home Front War Relief Program, and VFW Unmet Needs.
+        </p>
+      <h3 class="text-center">HUD-VASH Voucher Program</h3>
+        <p>
+          This joint Supported Housing Program with the US Department of Housing and Urban Development (HUD) provides permanent housing and ongoing case management treatment services for homeless veterans who would not be able to live independently without the support of case management.
+
+HUD’s Section 8 Voucher Program has designated vouchers to Public Housing Authorities (PHAs) throughout the country for veterans who are homeless. These vouchers allow veterans to live in communities served by their VA medical facility where case management services can be provided.
+
+For more information: Federal VA: HUD-VASH program
+        </p>
+      <h3 class="text-center">National Call Center for Homeless Veterans</h3>
+        <p>
+          ​If you are a homeless veteran or trying to help a veteran avoid homelessness, contact the federal VA’s National Call Center for Homeless Veterans at 877-4AID-VET (877-424-3838) to speak to a trained VA responder. The hotline and online chat are free and neither VA registration nor enrollment in VA healthcare is required to use these services.
+
+Expert responders staff the hotline for homeless veterans 24 hours a day, seven days a week. The  responders can provide emergency support and resources to homeless veterans and family members, as well as community agencies and non-VA providers.
+
+Find out more: VA National Call Center
+        </p>
+      <h3 class="text-center">Stand Downs​</h3>
+        <p>
+          Stand Downs are one-to three-day events that provide homeless veterans a variety of services and allow VA and community-based service providers to reach more homeless veterans. Stand downs give homeless veterans a temporary refuge where they can obtain food, shelter, clothing and a range of community and VA assistance. In many locations, stand downs provide health screenings, referral and access to long-term treatment, benefits counseling, ID cards and access to other programs to meet their immediate needs.
+
+Find out more: Federal VA: Homeless Veterans - Upcoming Events
+       </p>
+      <h3 class="text-center">Transitional Residence Program</h3>
+       <p>
+         The Transitional Residence (TR) program is a work-based Psychosocial Residential Rehabilitation Treatment Program offering a therapeutic residential setting for veterans involved in Compensated Work Therapy (CWT). The TR program provides a rehabilitation-focused residential setting for veterans recovering from chronic mental illness, chemical dependency and homelessness.
+
+TR provides a bridge between hospitalization or intensive outpatient treatment and successful community reintegration. It utilizes a residential therapeutic community of peer and professional support, with a strong emphasis on increasing personal responsibility and achievement of individualized rehabilitation goals.
+
+This program differs from other VA-operated residential bed programs in that participants contribute (using their CWT earnings) to the cost of operating and maintaining their residences and are responsible for planning, purchasing and preparing their own meals.
+
+Find out more: Federal VA Compensated Work Therapy
+       </P>
+      <h3 class="text-center"></h3>
+       <p>
+       </P>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center">​</h3>
+       <p>
+      </p>
+      <h3 class="text-center"></h3>
+        <p>
+        </P>
+
+
+    </div>
+  </div>
+  
+{% block content %}
+{% endblock content %}
+{% block js_body %}{% endblock js_body %}
+</body>
+</html>

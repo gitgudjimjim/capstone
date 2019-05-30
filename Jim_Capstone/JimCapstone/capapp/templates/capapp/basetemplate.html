@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}{% endblock title %}</title>
+    <title>{% block title %}Oregon Veterans{% endblock title %}</title>
     <link rel="stylesheet"
       href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -14,72 +14,135 @@
     {% block js_head %}{% endblock js_head %}
 </head>
 <body>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link" href="#">HOMEPAGE</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Adaptive Programs</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Claims Process</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Disability Compensation and Pensions</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Education</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Employment</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Homelessness and Emergency</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Housing and Property Tax</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">IDs/DMV Plates/Records</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Justice-Involved Veterans</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Long-Term Care</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Medical and Mental Health Care</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Oregon Veterans' Homes</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Recreation</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Special Advocacy</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Specialty Care</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Survivor and Family Benefits</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Transportation</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Trauma</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Veteran Owned Businesses</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Working With a Veteran Service Officer</a>
-    </li>
-  </ul>
-    {% block content %}{% endblock content %}
-    {% block js_body %}{% endblock js_body %}
+  <div class="row">
+    <div class="col-sm-2">
+      <ul class="nav sticky-top flex-column" data-spy="affix">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:homepage' %}">HOMEPAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:burial_benefits' %}">Burial Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Claims Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Disability Compensation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Emergency Assistance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Employment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Healthcare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home Loans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">License Plates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Long-Term Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pension</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Records and Medals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recreation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Special Advocacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Taxes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Transportation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Veteran IDs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Veteran Owned Businesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Veteran Volunteer Program</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <h1 class="text-center"></h1>
+        <p>
+        </p>
+<hr color=red>
+      <h3 class="text-center"></h3>
+        <p>
+        </P>
+      <h3 class="text-center"></h3>
+        <p>
+        </p>
+      <h3 class="text-center"></h3>
+        <p>
+        </p>
+      <h3 class="text-center"></h3>
+        <p>
+        </p>
+      <h3 class="text-center"></h3>
+        <p>
+        </p>
+      <h3 class="text-center"></h3>
+        <p>
+        </p>
+      <h3 class="text-center">​</h3>
+        <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </P>
+      <h3 class="text-center"></h3>
+       <p>
+       </P>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center"></h3>
+       <p>
+       </p>
+      <h3 class="text-center">​</h3>
+       <p>
+      </p>
+      <h3 class="text-center"></h3>
+        <p>
+        </P>
+
+
+    </div>
+  </div>
+  <div class="row">
+    <p>
+      this is a new row
+    </p>
+  </div>
+{% block content %}
+{% endblock content %}
+{% block js_body %}{% endblock js_body %}
 </body>
 </html>

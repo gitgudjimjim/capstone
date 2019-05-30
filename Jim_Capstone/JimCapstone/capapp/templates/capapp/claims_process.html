@@ -1,0 +1,188 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Oregon Veterans{% endblock title %}</title>
+    <link rel="stylesheet"
+      href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    {% block main_styles %}
+        <link rel='stylesheet' href='{% static "todos/css/stylesheet.css" %}'>
+    {% endblock main_styles %}
+    {% block extra_styles %}{% endblock extra_styles %}
+    {% block js_head %}{% endblock js_head %}
+</head>
+<body>
+  <div class="row">
+    <div class="col-sm-2">
+      <ul class="nav flex-column sticky-top data-spy="affix">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:homepage' %}">HOMEPAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:burial_benefits' %}">Burial Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:claims_process' %}">Claims Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:disability_compensation' %}">Disability Compensation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:education' %}">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:emergency_assistance' %}">Emergency Assistance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:employment' %}">Employment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:health' %}">Healthcare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:home_loans' %}">Home Loans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:license_plates' %}">License Plates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:long_term_care' %}">Long-Term Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:pension' %}">Pension</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:records_medals' %}">Records and Medals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:recreation' %}">Recreation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:special_advocacy' %}">Special Advocacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:taxes' %}">Taxes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:transportation' %}">Transportation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_IDs' %}">Veteran IDs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_owned_businesses' %}">Veteran Owned Businesses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'capapp:veteran_volunteer_program' %}">Veteran Volunteer Program</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <h1 class="text-center">Claims Process</h1>
+        <p>
+          Filing a claim for disability benefits through the federal VA is actually a legal process. In order to receive benefits and compensation, you must file a claim with the United States proving eligibility through legal, military and medical evidence.
+          Though it is possible to file a claim yourself (just as it is possible to represent yourself in a court of law), it is highly recommended that you seek the free assistance of a veteran service officer (VSO) employed or certified by the Oregon Department of Veterans’ Affairs.
+          Available at the statewide level and in every county, VSOs represent veterans, their dependents and survivors through each stage of the claims process, including appeals.​
+        </p>
+<hr color=red>
+      <h2 class="text-center">How To File a Claim</h2>
+      <h3 class="text-center">Step 1:File a Claim Through Your Local VSO</h2>
+        <p>
+          Federal law grants the VA authority to compensate veterans for injuries, disabilities and conditions that were incurred or aggravated during active military service, provided that you were released under honorable conditions (honorable or general discharge). See Disability Compensation for more information about this benefit.
+          The disability claim process begins the moment you file a claim. To file your claim
+
+          through a VSO, you must sign a power of attorney, which authorizes the VSO to act on your behalf in preparing, presenting and pursuing your claim for any and all benefits from the federal VA.
+        </P>
+      <h3 class="text-center">Step 2:Obtain Evidence</h3>
+        <p>
+          You must submit evidence to support your disability claim. The type of evidence required will depend on the case, but generally, you will need to prove that you served in the U.S. armed forces, that you have a disability and that your disability resulted from or was aggravated by your service.
+          This evidence may include service records, medical records and lay testimony (also
+
+          known as “buddy letters” or “buddy statements”).Claims submitted with all the relevant evidence may qualify for expedited review from
+
+          the VA through the optional Fully Developed Claim initiative​. Your disability evaluation will be based on the evidence, so it is essential that the information is accurate and complete. Your VSO will assist you in this process.
+        </p>
+      <h3 class="text-center">Step 3:Establish Current Diagnosis</h3>
+        <p>
+          A successful claim must demonstrate that your disability is currently affecting your physical, mental or behavioral health. This is typically done in a Compensation and Pension Exam (commonly referred to as a C&P exam) at a VA medical facility.
+          This exam will generally involve a physical examination of the affected area. Depending
+
+          on the type of disability you are claiming, it may also include lab work, X-rays and other diagnostic tests. The examiner’s goal is to establish a "snapshot" of your disability, documenting the physical effects that are observable and measurable at the time of the exam.
+          If the VA determines that a C&P exam is necessary, it will schedule the exam and let you know when, where and what exams are scheduled. Afterward, a report will be prepared and sent to the VA for review.
+        </p>
+      <h3 class="text-center">Step 4:VA Rater Completes Record</h3>
+        <p>
+          A federal VA rater will be assigned to your case and will decide your claim based on the evidence submitted. You will be informed of the decision via mail.
+
+If your claim is approved, a rating will be decided based on how severe your conditions are. The ratings are on a 10-point scale from 0 to 100 percent (e.g., 10 percent, 20 percent, 30 percent, etc.), and are defined and set based on federal law.
+        </p>
+<hr color=red>
+      <h1 class="text-center">What If My CLaim Is Denied??!!</h1>
+        <p>
+          If your claim for disability compensation is denied by the VA, you may appeal the decision. You may also appeal if your claim is approved, but you disagree with the rating or any other part of the VA’s decision.
+
+VA appeals involve a long, complicated and multi-step adjudication process between you, your veterans service officer and the regional office of the federal VA. There are a number of different options for appealing your case, and your statewide or county VSO will work with you to determine the best course for your situation.
+
+The process may involve some of the following steps, as outlined by the Board of Veterans Appeals.
+
+      <h2 class="text-center">Step 1:File a Notice of Disagreement(NOD)</h2>
+        <p>
+          The letter notifying you of the VA’s decision should contain information describing your appeal options. Generally, you will have one year from the date of the VA’s decision letter to file a Notice of Disagreement, which is the first step in the appeal process.
+        </p>
+      <h2 class="text-center">Step 2:Receive Your Statement of the Case(SOC)</h2>
+        <p>
+          Once you file a Notice of Disagreement, the VA regional office will review your case and prepare a written explanation of why your claim was denied. This explanation, known as the Statement of the Case, or SOC, will be mailed to you.
+
+If you submit further evidence after receiving the SOC, you may receive a Supplemental Statement of the Case once the VA has reviewed the new evidence.
+        </p>
+      <h2 class="text-center">​Step 3:File a Substantive Appeal(Form 9)</h2>
+        <p>
+          If you disagree with the Statement of the Case and would like to continue your appeal to the federal VA’s Board of Veterans’ Appeals, you will have 60 days to file a Substantive Appeal, also known as a Formal Appeal. At this time, you can also request an optional hearing before a Veterans Law Judge, the administrative judicial officers employed by the Board of Veterans Appeals.
+       </p>
+      <h2 class="text-center">Step 4:Optional Hearing</h2>
+       <p>
+         If you elected to receive a hearing before a Veterans Law Judge, an in-person or video teleconference hearing will be scheduled. You are entitled to request a hearing before a Veterans Law Judge at the VA regional office or in Washington, D.C.
+
+For what to expect at a hearing before a Veterans Law Judge, see page 10 of the federal VA's booklet "How Do I Appeal?"​
+       </P>
+      <h2 class="text-center">Step 5:Receive the Board's Decision</h2>
+       <p>
+         After you file a Substantive Appeal, the VA regional office will transfer your appeal to the Board of Veterans' Appeals, where a decision will be prepared and mailed to you.
+
+The Veterans Law Judge who reviews your case will grant or deny each issue in your appeal, or choose to remand one or more issues back to the VA regional office for further investigation.
+
+If an issue is denied and you want to pursue further action, you may file a motion asking the Board to reconsider, or appeal your case to the U.S. Court of Appeals for Veterans Claims (CAVC). You will have 120 days from the decision of the Board of Veterans' Appeals to file a written Notice of Appeal with the Court.
+       </P>
+      <h2 class="text-center"></h2>
+       <p>
+       </p>
+      <h2 class="text-center"></h2>
+       <p>
+       </p>
+      <h2 class="text-center"></h2>
+       <p>
+       </p>
+      <h2 class="text-center"></h2>
+       <p>
+       </p>
+      <h2 class="text-center"></h2>
+       <p>
+       </p>
+      <h2 class="text-center">​</h2>
+       <p>
+      </p>
+      <h2 class="text-center"></h2>
+        <p>
+        </P>
+
+
+    </div>
+  </div>
+  
+{% block content %}
+{% endblock content %}
+{% block js_body %}{% endblock js_body %}
+</body>
+</html>

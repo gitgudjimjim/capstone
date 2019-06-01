@@ -6,7 +6,7 @@ from django.http import HttpResponse
 #def basetemplate(request):
 #    return render(request, 'capapp/basetemplate.html')
 def homepage(request):
-    return render(request, 'capapp/homepage.html')
+    return render(request, 'capapp/index.html')
 def ap(request):
     return render(request, 'capapp/adaptive_programs.html')
 def burial_benefits(request):

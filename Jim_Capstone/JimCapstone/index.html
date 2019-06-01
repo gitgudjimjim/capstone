@@ -1,4 +1,4 @@
-{% load static %}
+
 
 <!DOCTYPE html>
 <html>
@@ -7,10 +7,8 @@
     <link rel="stylesheet"
       href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    {% block main_styles %}
-    {% endblock main_styles %}
-    {% block extra_styles %}{% endblock extra_styles %}
-    {% block js_head %}{% endblock js_head %}
+
+    
 </head>
 <body>
   <div class="row">
@@ -80,11 +78,11 @@
     </div>
     <div class="col-sm-9">
       <h1 class="text-center">Welcome Veterans!</h1>
-
-
+      <img class="mx-auto d-block img-responsive" src="https://user-images.githubusercontent.com/47095793/58662552-53fe3f80-82df-11e9-8ecb-06d34f189810.jpg">
+      <p class="text-center">
+        "Better than honor and glory, and History’s iron pen, Was the thought of duty done and the love of his fellow-men. -Richard Watson Gilder"
+      </p>
     </div>
   </div>
-    {% block content %}{% endblock content %}
-    {% block js_body %}{% endblock js_body %}
 </body>
 </html>
